@@ -1,0 +1,84 @@
+.wrapper{
+        width: 900px;
+        height: auto;
+        display: grid;
+        background-color: transparent;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "slide";
+        justify-content: center;
+        overflow: hidden;
+    }
+    .newSlider{
+        width: 800px;
+        height: 500px;
+        background-color: ivory;
+        display: flex;
+        position: absolute;
+        overflow: hidden;
+        justify-self: center;
+        align-self: center;  
+    }
+    .card{
+        border-radius: 8px;
+        text-align: center;
+        background-color: ivory;
+        color: #4A0404;
+        text-decoration: none;
+        animation: slides 40s linear infinite;
+        border: 2px dotted #023020 ;
+    }
+    .cardLink{
+        width: 100px;
+        height: 25px;
+        font: sans-serif 15px white;
+        border-radius: 8px 10px;
+        border: 2px dotted silver;
+        background: #483248;
+        padding-top: 5px;
+        cursor: pointer;
+        align-self: center;
+        
+    }
+    .slider{
+        width: 800px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+        position: absolute;
+        overflow: hidden;
+        justify-self: center;
+        align-self: center;
+
+
+    }
+    .slider img:nth-child(1), .slider img:nth-child(2), .slider img:nth-child(3), .slider img:nth-child(4), .slider img:nth-child(5), .slider img:nth-child(6), .slider img:nth-child(7), .slider img:nth-child(8), .slider img:nth-child(9), .slider img:nth-child(10) {
+        width: 150px;
+        padding-right: 5px;
+        height: 180px;
+        border-radius: 10px 10px;
+        animation: slides 40s linear infinite;
+        align-self: center;
+        margin-top: 10px;
+    }
+    .header{
+        text-align: center;
+    }
+    @keyframes slides{
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(-250px);
+        }
+        50%{
+            transform: translateX(-500px);
+        }
+        75%{
+            transform: translateX(-750px);
+        }
+        100%{
+            transform: translateX(-1000px);
+        }
+    }

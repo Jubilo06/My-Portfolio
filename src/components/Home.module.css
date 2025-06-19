@@ -1,0 +1,9 @@
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(to bottom, #032B44,#212121) ;
+}
+.skillStack{
+    margin-top: auto;
+}

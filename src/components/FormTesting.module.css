@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+.wrapper{
+    width: 830px;
+    height: auto;
+    background: transparent;
+    border: 1px solid rgba(147, 162, 233, 0.25);
+    justify-self: center;
+}
+.typo{
+    text-align: left;
+    width: 100%;
+    color: #ECFFDC;
+    background-color: transparent;
+}
+.submitButton{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px 6px;
+    background-color: #FAF9F6;
+    justify-self: center;
+    align-self: center;
+    color: #023020;
+    cursor: pointer;
+}
+.FormStack{
+    height: 250px;
+    justify-content: center; 
+    align-items: center;
+    background-color: ivory;
+    border: 1px solid gold;
+    border-radius: 20px;
+    position: relative;
+    align-self: center;
+    
+}
+
+.FormStack button:hover{
+    border:1px solid orangered;
+    color: orangered;
+}
+.field{
+    width: auto;
+    height: auto;
+}
+

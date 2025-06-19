@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+.NavStack{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, #032B44,#212121) ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+.logoStack{
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font: 30px sans-serif bolder;
+    text-indent: 10px;
+}
+.linkStack{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkStack a{
+    font: 20px sans-serif bolder;
+    text-decoration: none;
+    color: ivory;
+    transition: all 0.2s ease-in-out;
+ 
+}
+.linkStack a:hover{
+    border-bottom: 2px solid white;
+    transform: translateY(-5px);
+}
+.linkStack a .active{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.logoStack svg {
+	font-family: "Konkhmer Sleokchher", sans-serif;
+	width: 100%; height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-content: center;
+}
+.logoStack svg text {
+	animation: stroke 1s forwards;
+    color: ivory;
+	stroke-width: 6;
+	stroke: #365FA0;
+	font-size: 70px;
+    align-self: center;
+    justify-self: center;
+    background: linear-gradient(to right, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.active{
+    background-color: red;
+}
+@keyframes stroke {
+	0%   {
+		fill: ivory; stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        background-position: 0 0;
+	}
+	70%  {fill: ivory; stroke: rgba(54,95,160,1); }
+	80%  {fill: ivory; stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: ivory; stroke: ivory;
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        background-position: 100% 0;
+	}
+}

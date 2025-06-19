@@ -1,0 +1,57 @@
+.wrapper{
+    background: linear-gradient(to bottom, #032B44,#212121) ;
+    border-radius: 10px;
+}
+.logoStack{
+    background: linear-gradient(to right, #032B44,#212121,#FFC000 );
+    justify-content: center;
+    align-items: center;
+}
+.linkStack{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.link{
+    font: 20px sans-serif;
+    text-decoration: none;
+    color: ivory;
+ 
+}
+.link:hover{
+    border-bottom: 1px solid white;
+    transform: translateY(-5px);
+}
+.logoStack svg {
+	font-family: "Konkhmer Sleokchher", sans-serif;
+	width: 100%; height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-content: center;
+}
+.logoStack svg text {
+	animation: stroke 1s forwards;
+    color: ivory;
+	stroke-width: 6;
+	stroke: #365FA0;
+	font-size: 70px;
+    align-self: center;
+    justify-self: center;
+    background: linear-gradient(to right, #fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes stroke {
+	0%   {
+		fill: ivory; stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        background-position: 0 0;
+	}
+	70%  {fill: ivory; stroke: rgba(54,95,160,1); }
+	80%  {fill: ivory; stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: ivory; stroke: ivory;
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        background-position: 100% 0;
+	}
+}

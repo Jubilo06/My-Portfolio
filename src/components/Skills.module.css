@@ -1,0 +1,36 @@
+.skillStack{
+    width: 98%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+}
+.contain{
+    width: 98%;
+    height: auto;
+    background-color: ivory;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    border-radius: 8px 8px 0px 0px;
+}
+.frontend{
+    background-color: transparent;
+    border-radius: 10px 10px;
+    width: 300px;
+    height: auto;
+}
+.frontend li{
+    list-style: none;
+    border-bottom: 2px solid grey;
+}
+.backend{
+    background-color: transparent;
+    border-radius: 10px 10px;
+    width: 300px;
+    height: auto;
+}
+.backend li{
+    list-style: none;
+    border-bottom: 2px solid grey;
+}
