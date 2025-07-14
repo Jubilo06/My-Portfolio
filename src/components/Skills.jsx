@@ -1,5 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import {Stack, Typography, Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import styles from './Skills.module.css'
@@ -9,16 +11,31 @@ import { Usercontext } from './UserProvider'
 
 function Skills() {
     const {contextValue}=useContext(Usercontext);
-    const [expanded, setExpanded]= useState(true);
-    const handleChange=(isExpanded, panel)=>{
-        setExpanded(isExpanded? panel:true)
+    const [expanded, setExpanded] = useState({
+    panel1: true,
+    panel2: true,
+    });
+    useEffect(()=>{
+        Aos.init({duration:2000})
+      },[])
+
+    
+    const handleChange=(panel)=>(event, isExpanded)=>{
+       setExpanded({
+      ...expanded, // Copy the current state of all panels
+      [panel]: isExpanded, // Update the state for the specific panel that was changed
+        });
     }
+    
   return (
-        <Stack direction='column' spacing={2} className={styles.skillStack} paddingLeft={{xs:'12px', sm:'8px'}}>
-            <Stack ><Typography variant='h4' sx={{textAlign:'center', color:'ivory'}}>My Skills</Typography></Stack>
-            <Stack direction='row' spacing={1} className={styles.contain} width={{xs:'300px', sm:'initial'}} >
+        <Stack direction='column' spacing={2} data-aos="zoom-in" my={2} className={styles.skillStack}  mt={{md:-6}} width={{xs:"100%", sm:"100%", md:"100%"}} minHeight={{xs:400}} >
+            <Stack >
+                <Typography variant='h4' sx={{textAlign:'center', color:'ivory'}}>My Skills<br/></Typography>
+                <Typography fontSize={{xs:"18px", sm:"25px", md:"25px",lg:"25px"}} width={{xs:"100%", sm:"100%", md:"100%", lg:"100%"}}  sx={{color:"ivory", textAlign:"center"}} justifySelf={{xs:"center", sm:"center", md:"center"}} alignSelf={{xs:"center", sm:"center", md:"center"}}>This showcase a diverse range of Frontend and Backend skills with a commitment to continuous learning and mastery</Typography>
+            </Stack>
+            <Stack direction='row' spacing={1} className={styles.contain} >
                 <Stack direction='column' className={styles.frontend}>
-                    <Accordion expanded={expanded==="panel1"} onChange={(event, isExpanded)=>handleChange(isExpanded,"panel1")}>
+                    <Accordion expanded={expanded.panel1} onChange={handleChange('panel1')}>
                         <AccordionSummary id='panel1-header' aria-controls='panel1-content' expandIcon={<ExpandMoreIcon htmlColor='#0818A8'/>}>
                             <Typography variant='h6' sx={{color:'#0818A8'}}>
                                 Frontend
@@ -41,7 +58,7 @@ function Skills() {
                     </Accordion>
                 </Stack>
                 <Stack direction='column' className={styles.backend}>
-                    <Accordion expanded={expanded==="panel2"} onChange={(event, isExpanded)=>handleChange(isExpanded,"panel2")}>
+                    <Accordion expanded={expanded.panel2} onChange={handleChange('panel2')}>
                         <AccordionSummary id='panel2-header' aria-placeholder='Frontend' aria-controls='panel2-content' expandIcon={<ExpandMoreIcon htmlColor='#0818A8'/>}>
                             <Typography variant='h6' sx={{color:'#0818A8'}}>
                                 Backend

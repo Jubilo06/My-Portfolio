@@ -1,7 +1,19 @@
 
 body{
   background: linear-gradient(to bottom, #032B44,#212121) ;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  min-height: 100vh; /* Use min-height to allow content to grow */
 }

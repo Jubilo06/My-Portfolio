@@ -11,7 +11,7 @@ import './app.css'
 import MobileDrawer from "./components/MobileDrawer";
 import ErrorPage from "./components/ErrorPage";
 import { UserProvider } from "./components/UserProvider";
-import { Stack, useTheme, useMediaQuery } from "@mui/material";
+import { Stack, useTheme, useMediaQuery, CssBaseline } from "@mui/material";
 import  UseSectionObserver   from "./components/UseSectionObserver";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -24,7 +24,7 @@ function App() {
     Aos.init({duration:2000})
   },[])
   const Theme= useTheme();
-  const isMobile = useMediaQuery(Theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(Theme.breakpoints.down('md'));
   
   return (
     <UserProvider>
@@ -39,22 +39,27 @@ function App() {
           <Route path="/nav" element={<PortDrawer/>}/>
         </Routes>
       </BrowserRouter> */}
-      {isMobile? <MobileDrawer />:<UseSectionObserver id='home'> <PortDrawer /></UseSectionObserver> }
-      <Stack direction='column'>
-          <UseSectionObserver id="about" >
-            <About   />
-          </UseSectionObserver>
-          <UseSectionObserver id="skill" >
-            <Skills  />
-          </UseSectionObserver>
-          <UseSectionObserver id="project" >
-            <Projects  />
-          </UseSectionObserver>
-          <UseSectionObserver id="contact" >
-            <FormTesting  />
-          </UseSectionObserver>
-        </Stack> 
-
+      
+      <Stack width="100%" spacing={2} sx={{justifyContent:'center'}} direction='column'>
+        
+        <Stack direction='column'>
+            <UseSectionObserver id='home'>
+               <PortDrawer />
+            </UseSectionObserver> 
+            <UseSectionObserver id="about" >
+              <About   />
+            </UseSectionObserver>
+            <UseSectionObserver id="skill" >
+              <Skills  />
+            </UseSectionObserver>
+            <UseSectionObserver id="project" >
+              <Projects  />
+            </UseSectionObserver>
+            <UseSectionObserver id="contact" >
+              <FormTesting  />
+            </UseSectionObserver>
+          </Stack> 
+      </Stack>
          
     </UserProvider>
       

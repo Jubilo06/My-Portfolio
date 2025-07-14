@@ -13,20 +13,20 @@ function PortDrawer() {
     const {activesection }=useContext(Usercontext);
     
     return (
-        <Stack className={styles.NavStack} sx={{position:{xs:'initial', sm:'fixed'}, top:{xs:'initial', sm:0}}} >
-            <Stack direction='row' sx={{background:'background: linear-gradient(to bottom, #032B44,#212121) ;'}}>
+        <Stack className={styles.NavStack} width={{xs:"100%", sm:"100%", md:"100%"}}   p={{xs:2}}  paddingLeft={{xs:0}} paddingTop={{xs:0}} sx={{position:{xs:'fixed', sm:'fixed'}, top:{xs:0, sm:0}}} >
+            <Stack direction='row' display={{sm:'none'}} justifySelf={{xs:"center"}} width={{xs:"100%", sm:"100%", md:"100%"}} alignSelf={{xs:"center"}} sx={{background:'red'}}>
                 <Stack>
-                    <IconButton
+                    <IconButton 
                         variant="text"
                         onClick={()=>setOpen(true)}
-                        sx={{ display: { xs: "block", sm: "none", md:'none',lg:'none' }, marginTop:'20px' }}
+                        sx={{ display: { xs: "block", sm: "block", md:'none',lg:'none' }, marginTop:'20px' }}
                     >
                         <MenuIcon htmlColor='ivory' />
                     </IconButton>
                 </Stack>
-                <Stack className={styles.logoStack} sx={{ display: { xs: "flex", sm: "none", md:'none',lg:'none' } }} >
+                <Stack className={styles.logoStacking} flexGrow={{xs:1}} justifySelf={{xs:'center', sm:'center', md:'center'}} width={{xs:"initial", sm:40}} alignSelf={{xs:"center", sm:'center', md:'center'}} sx={{ display: { xs: "flex", sm: "none", md:'none',lg:'none' } }} >
                     <svg >
-                    <text x="55%" y="20%" dy=".45em" text-anchor="middle">
+                        <text x="52%" y="15%" dy=".95em" text-anchor="middle">
                                 jubilo
                         </text>
                     </svg>
@@ -34,7 +34,7 @@ function PortDrawer() {
             </Stack>
             
             
-            <Stack sx={{background:'background: linear-gradient(to bottom, #032B44,#212121)'}} >
+            <Stack justifySelf={{xs:'center'}} alignSelf={{xs:"center"}} sx={{background:'background: linear-gradient(to bottom, #032B44,#212121)'}} >
                 <Drawer
                     open={open}
                     anchor='left'
@@ -45,20 +45,20 @@ function PortDrawer() {
                 >
                     <Stack direction='row' width='100%'>
                         <Stack><MobileDrawer open={open} setOpen={setOpen} /></Stack>
-                        <Stack sx={{background:'background: linear-gradient(to bottom, #032B44,#212121)'}}>
+                        <Stack height={{xs:"100%"}} flexGrow={1} sx={{background: 'linear-gradient(to bottom, #032B44,#212121)'}}>
                             <IconButton
                                 variant="text"
                                 onClick={()=>setOpen(false)}
                                 sx={{ display: { xs: "block", sm: "none", md:'none',lg:'none' }, marginTop:'20px' }}
                             >
-                                <CloseIcon />
+                                <CloseIcon htmlColor='white' fontSize='large' />
                             </IconButton>
                         </Stack>
                     </Stack>
                     
                 </Drawer>
             </Stack>
-            <Nav sx={{display: { xs: "none", sm: "inherit" }, position:{xs:'initial', sm:'sticky'},top:{xs:'initial', sm:0}}}/>
+            <Nav sx={{display: { xs: "none",sm:"inherit" }, position:{xs:'initial', sm:'sticky'},top:{xs:'initial', sm:0}}}/>
         </Stack>
     );
 }; 

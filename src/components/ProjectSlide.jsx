@@ -14,72 +14,72 @@ export default function ProjectSlide() {
         <Stack direction='row' className={styles.newSlide} spacing={1}>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography variant='h5' sx={{color:'#0818A8'}}>Calculator</Typography>
-              <img src={calculator} alt='calc' width='200px' height='200px' />
+              <img src={calculator} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Todo App</Typography>
-              <img src={todo} alt='calc' width='200px' height='200px' />
+              <img src={todo} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Food Recipe App</Typography>
-              <img src={recipe} alt='calc' width='200px' height='200px' />
+              <img src={recipe} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Car deal</Typography>
-              <img src={cardealer} alt='calc' width='200px' height='200px' />
+              <img src={cardealer} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Book store</Typography>
-              <img src={bookseller} alt='calc' width='200px' height='200px' />
+              <img src={bookseller} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Tictactoe Game</Typography>
-              <img src={tictactoe} alt='calc' width='200px' height='200px' />
+              <img src={tictactoe} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Quiz App</Typography>
-              <img src={quizapp} alt='calc' width='200px' height='200px' />
+              <img src={quizapp} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Calculator</Typography>
-              <img src={calculator} alt='calc' width='200px' height='200px' />
+              <img src={calculator} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Todo App</Typography>
-              <img src={todo} alt='calc' width='200px' height='200px' />
+              <img src={todo} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Food Recipe App</Typography>
-              <img src={recipe} alt='calc' width='200px' height='200px' />
+              <img src={recipe} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Car deal</Typography>
-              <img src={cardealer} alt='calc' width='200px' height='200px' />
+              <img src={cardealer} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Book store</Typography>
-              <img src={bookseller} alt='calc' width='200px' height='200px' />
+              <img src={bookseller} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Tictactoe Game</Typography>
-              <img src={tictactoe} alt='calc' width='200px' height='200px' />
+              <img src={tictactoe} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
           <Stack direction='column' className={styles.card} spacing={2}>
               <Typography sx={{color:'#0818A8'}}>Quiz App</Typography>
-              <img src={quizapp} alt='calc' width='200px' height='200px' />
+              <img src={quizapp} alt='calc' loading='lazy' width='200px' height='200px' />
               <Link className={styles.cardLink} underline='none' color='white'>View Project</Link>
           </Stack>
         </Stack>

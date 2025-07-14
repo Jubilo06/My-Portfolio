@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 .wrapper{
-    width: 830px;
+    width: 100%;
     height: auto;
-    background: transparent;
+    background: linear-gradient(to bottom, #3C1518,#2E2C2F);
+    justify-self: center;
+    align-self: center;
     border: 1px solid rgba(147, 162, 233, 0.25);
     justify-self: center;
 }
@@ -28,7 +30,7 @@
     justify-content: center; 
     align-items: center;
     background-color: ivory;
-    border: 1px solid gold;
+    border: 1px solid orangered;
     border-radius: 20px;
     position: relative;
     align-self: center;

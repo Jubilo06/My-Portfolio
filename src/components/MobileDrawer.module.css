@@ -1,6 +1,8 @@
 .wrapper{
-    background: linear-gradient(to bottom, #032B44,#212121) ;
+    background: linear-gradient(to bottom, #032B44,#212121);
     border-radius: 10px;
+    align-self: center;
+    justify-self: center;
 }
 .logoStack{
     background: linear-gradient(to right, #032B44,#212121,#FFC000 );

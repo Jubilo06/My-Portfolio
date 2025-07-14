@@ -5,6 +5,7 @@ import { Usercontext } from './UserProvider';
  const UseSectionObserver = ({children, id}) => {
     const{setActivesection}= useContext(Usercontext);
     const { ref, inView } = useInView({
+      triggerOnce:true,
       threshold: 0.5, // Adjust this value to your preference
     });
   

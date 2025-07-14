@@ -1,5 +1,5 @@
 .wrapper{
-        width: 900px;
+        width: 100%;
         height: auto;
         display: grid;
         background-color: transparent;
@@ -9,6 +9,7 @@
         "slide";
         justify-content: center;
         overflow: hidden;
+        
     }
     .newSlider{
         width: 800px;

@@ -1,12 +1,11 @@
 .skillStack{
-    width: 98%;
     height: auto;
     justify-content: center;
     position: relative;
-    background-color: transparent;
+    background: linear-gradient(to bottom,#05204A, #274156);
 }
 .contain{
-    width: 98%;
+    width: 100%;
     height: auto;
     background-color: ivory;
     justify-content: center;
@@ -17,7 +16,7 @@
 .frontend{
     background-color: transparent;
     border-radius: 10px 10px;
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 .frontend li{
@@ -27,7 +26,7 @@
 .backend{
     background-color: transparent;
     border-radius: 10px 10px;
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 .backend li{
